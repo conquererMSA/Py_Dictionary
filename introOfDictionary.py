@@ -1,3 +1,3 @@
 '''
-What is dictionary/object in python:
+What is dictionary in python:
 '''
