@@ -9,3 +9,7 @@ student=dict(list[tuple,tuple])
 student=dict([('name','MSA'),('age',24)])
 student={"name":"MSA","age":24}
 '''
+student=dict([("name","MSA"),("age",24),("institute","NSTU")])
+# print(student) # {'name': 'MSA', 'age': 24, 'institute': 'NSTU'}
+# type_of_student=type(student)
+# print(type_of_student) #<class 'dict'>
