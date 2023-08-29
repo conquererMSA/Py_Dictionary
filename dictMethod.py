@@ -22,7 +22,7 @@ puro dict computer memmory theke elete korar jonno "del" key word use kora zete 
 del infoDict.
 dict theke kuno specified item delete korar jonno del dectName[keyName] use kora hoy
 kuno dict ke empty korar jonno dictName.clear() method use kora zay. clear() method 
-emty dict return kore.
+empty/None dict return kore.
 kuno dict theke specified specified item remove korar jonn dictName.pop('keyName') use kora zay.
 dictName.pop(keyName) method pop kora key er value return kore.
 kuno dict theke randomly kuno key:value remove korar jonno dictName.pop() method use 
@@ -34,5 +34,8 @@ kora zay.
 
 # del infoDict
 # print(infoDict) # showing name error.
+
+# clear() method
+# print(infoDict.clear()) #None
 
 
