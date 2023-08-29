@@ -53,17 +53,31 @@ student={'name': 'MSA', 'age': 24, 'institute': 'NSTU', 'salary': 'unkwon'}
 # student.update({'salary':384757443})
 # print(student)
 
+# students={}
+# while True:
+#     roll=int(input("Enter the student rolls: "))
+#     if roll not in students:
+#         marks=float(input(F"Enter marks for {roll}: "))
+#         students.update({roll:marks})
+#     else:
+#         print(F"You already added {roll}")
+#         continue
+#     addMore=input('Do you want to add more? (y/n): ')
+#     if addMore=='n':
+#         break
+# print(students)
+#another way
+howManyStudent=int(input('How many students do you want to add: '))
 students={}
-while True:
-    roll=int(input("Enter the student rolls: "))
+studentsLength=len(students)
+while len(students)<howManyStudent:
+    roll=int(input('Enter student roll num: '))
     if roll not in students:
         marks=float(input(F"Enter marks for {roll}: "))
-        students.update({roll:marks})
+        students[roll]=marks
     else:
-        print(F"You already added {roll}")
-        continue
-    addMore=input('Do you want to add more? (y/n): ')
-    if addMore=='n':
-        break
+        print(F"You have already added {roll}!")
 print(students)
+
+
 
