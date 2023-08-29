@@ -23,3 +23,12 @@ student=dict([("name","MSA"),("age",24),("institute","NSTU")])
 # print(dict_length) # 3 item in student dict
 # print(len(student))
 
+#accessing single keys
+#syntex dict_name['keyName']
+# msaName=student["name"]
+# msaSalary=student['salary'] error occur
+# student['salary']=100
+# msaSalary=student['salary']
+# print(msaName,msaSalary) # MSA 100
+# msaSalary=student['salary']-80
+# print(msaSalary) #20
