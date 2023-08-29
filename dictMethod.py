@@ -47,3 +47,8 @@ student={'name': 'MSA', 'age': 24, 'institute': 'NSTU', 'salary': 'unkwon'}
 # dictName.popitem() randomly key:value remove kore and tuple return kore
 # deleteKeyValue=student.popitem()
 # print(f"{deleteKeyValue[0]} is deleted with value {deleteKeyValue[1]}")
+#update a dict by dictName.update() method.
+# student.update({'college':'GSC','school':'SCHOOLARSHOME'})
+# student.update({'salary':384757443})
+# print(student)
+
