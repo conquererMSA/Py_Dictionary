@@ -25,8 +25,8 @@ kuno dict ke empty korar jonno dictName.clear() method use kora zay. clear() met
 empty/None dict return kore.
 kuno dict theke specified specified item remove korar jonn dictName.pop('keyName') use kora zay.
 dictName.pop(keyName) method pop kora key er value return kore.
-kuno dict theke randomly kuno key:value remove korar jonno dictName.pop() method use 
-kora zay.
+kuno dict theke randomly kuno key:value remove korar jonno dictName.popitem() method use 
+kora zay and popitem() deleted tuple return kore.
 '''
 # del dict and dict specified item
 # del infoDict['salary'] infoDict theke salary delete hobe.
@@ -38,4 +38,12 @@ kora zay.
 # clear() method
 # print(infoDict.clear()) #None
 
+# pop(key, defaultValue) and popitem() method
 
+student={'name': 'MSA', 'age': 24, 'institute': 'NSTU', 'salary': 'unkwon'}
+# deleteValue=student.pop('salary','not found')
+# print(deleteValue) #unknown
+# dictName.pop() method remove key er value return kore
+# dictName.popitem() randomly key:value remove kore and tuple return kore
+# deleteKeyValue=student.popitem()
+# print(f"{deleteKeyValue[0]} is deleted with value {deleteKeyValue[1]}")
