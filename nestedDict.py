@@ -16,12 +16,24 @@ students={'msa':{'name':'MSA','age':24,'institute':{'school':'Mugolgoan Primary 
 
 #accessing dict property:
 msaCollege=students['msa']['institute']['college']['secondery']
-print(msaCollege)
+# print(msaCollege)
 msaVersity=students['msa']['institute']['college']['versity']
-print(msaVersity)
+# print(msaVersity)
 smdCollege=students['smd']['college']
-print(smdCollege)
+# print(smdCollege)
 smdSub3=students['smd']['subjects'][2]
-print(smdSub3)
+# print(smdSub3)
 smdBangla=students['smd']['subjects'][0]
-print(smdBangla)
+# print(smdBangla)
+
+# problem 1: findout the last value from a dictionary:
+subject={'Python':234,'Java':384,'JS':422,'Ruby':345}
+#get all keys from subject dictionary
+allKeys=list(subject.keys())
+# print(allKeys)
+#get last keys by negative indexing from the list allkeys
+lastKey=allKeys[-1]
+# print(lastKey) Ruby
+#get keys value
+lastValue=subject[lastKey]
+# print(lastValue) #345
