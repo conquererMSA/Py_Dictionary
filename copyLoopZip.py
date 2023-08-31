@@ -65,10 +65,20 @@ setike ar unzip ba use kora zay na
 chatro=['MSA','SMD','ALD']
 sub=['Python','Java','JS']
 subMarks=[12,23,34]
-infoObj=set(zip(chatro,sub,subMarks))
-print(infoObj) # [('MSA', 'Python', 12), ('SMD', 'Java', 23), ('ALD', 'JS', 34)]
+infoObj=list(zip(chatro,sub,subMarks))
+# print(infoObj) # [('MSA', 'Python', 12), ('SMD', 'Java', 23), ('ALD', 'JS', 34)]
+infoSet=set(zip(chatro,sub,subMarks))
+# print(infoSet) #{('MSA', 'Python', 12), ('SMD', 'Java', 23), ('ALD', 'JS', 34)}
 # infoObj2=dict(zip(chatro,sub,subMarks))
 # print(infoObj2) # through error, karo zip function e 3ti list ache.
+
+studentList=[]
+for studentInf0 in infoObj:
+     # print(studentInf0) # ('ALD', 'JS', 34)
+     for info in studentInf0:
+         # print(info)
+         studentList.append(info)
+# print(studentList) #['ALD', 'JS', 34, 'SMD', 'Java', 23, 'MSA', 'Python', 12]
 
 
 
