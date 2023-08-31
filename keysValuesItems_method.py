@@ -14,3 +14,12 @@ for student in studentKeys:
     print(f"{student} fees after discount: {afterDiscount}") #MSA fees after discount: 123
 
 #values method
+studentValue=students.values()
+# print(studentValues) #dict_values([223, 342, 432])
+studentValues=list(students.values())
+totalValues=0
+for value in studentValues:
+    totalValues+=value
+# print('total fees is: ',totalValues) # total fees is:  997
+
+#items method:
