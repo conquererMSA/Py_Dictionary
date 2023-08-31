@@ -80,5 +80,20 @@ for studentInf0 in infoObj:
          studentList.append(info)
 # print(studentList) #['ALD', 'JS', 34, 'SMD', 'Java', 23, 'MSA', 'Python', 12]
 
+#zip to unzip
+teacher=['MSA','SMD','ALD']
+dutyOfSub=['Python','Java','JS']
+duration=[12,23,34]
+teacherInfo=list(zip(teacher,dutyOfSub,duration))
+# print(teacherInfo) #zip obj is used in print func
+
+#zip theke pawya obj use kora hoye gele seti ar memmory te exist kore na, empty hoye zay.
+t,s,m=zip(*teacherInfo)
+print(t,s,m)
+teachers=[]
+for teacher in t:
+    teachers.append(teacher)
+# print(teachers) # ['MSA', 'SMD', 'ALD']
+# zip obj unzip korle ekekta separate element tuple hisabe pawaya zay
 
 
