@@ -44,9 +44,31 @@ for student in students:
         # findout average marks
     averageMarks=studentTotalMarks/len(student)
     marks.append(averageMarks)
-print(marks)
+# print(marks)
 
+#zip method:
+'''
+ekadik list ke ekti single dict/list/tuple e convert korar jonno zip function use kora 
+hoy.
+# zip function zip obj/<zip object at 0x00000156B1ECE940> return kore
+Zip function ekekta argument ke tuple convert kore, ekekta tuple comma diye separate 
+thake.
+***Zodi zip function er moddhye shudhu matro duiti list deya hoy, tobe sei zip object 
+ke dictionary te convert kora zay.
 
+Zodi dui er odhik list deya hoy tobe setake list e convert korte hoy.
+Dui er odhik list takle sei zip obj ke list na hoy set e convert kora zay.
+
+Zodi kuno zip obj ke use kora hoy tobe seti empty hoye zay. zip obj empty hoye gele 
+setike ar unzip ba use kora zay na
+'''
+chatro=['MSA','SMD','ALD']
+sub=['Python','Java','JS']
+subMarks=[12,23,34]
+infoObj=set(zip(chatro,sub,subMarks))
+print(infoObj) # [('MSA', 'Python', 12), ('SMD', 'Java', 23), ('ALD', 'JS', 34)]
+# infoObj2=dict(zip(chatro,sub,subMarks))
+# print(infoObj2) # through error, karo zip function e 3ti list ache.
 
 
 
