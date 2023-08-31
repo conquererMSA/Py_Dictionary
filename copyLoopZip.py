@@ -35,6 +35,7 @@ msa={"Python":85,"Java":60,"JS":70}
 pvs={"Python":89,"Java":80,"JS":90}
 mhd={"Python":80,"Java":55,"JS":90}
 students=[msa,pvs,mhd]
+marks=[]
 for student in students:
     studentTotalMarks=0
     for subject in student:
@@ -42,7 +43,8 @@ for student in students:
         studentTotalMarks=studentTotalMarks+student[subject]
         # findout average marks
     averageMarks=studentTotalMarks/len(student)
-    print(averageMarks)
+    marks.append(averageMarks)
+print(marks)
 
 
 
