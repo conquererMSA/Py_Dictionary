@@ -37,3 +37,14 @@ lastKey=allKeys[-1]
 #get keys value
 lastValue=subject[lastKey]
 # print(lastValue) #345
+
+# problem 2: count all key's value those are a list
+stuDict={'msa':234,'smd':[234,456,245],'Pvsa':[235,74,567,34],'ahd':'Good','amn':[643]}
+#get all values by dict method values in a list
+valuesList=list(stuDict.values())
+# looping all values and check each item is it instance of list
+count=0
+for value in valuesList:
+    if isinstance(value,list):
+        count+=1
+print(count)
