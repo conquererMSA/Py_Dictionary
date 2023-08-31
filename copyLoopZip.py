@@ -94,6 +94,6 @@ teachers=[]
 for teacher in t:
     teachers.append(teacher)
 # print(teachers) # ['MSA', 'SMD', 'ALD']
-# zip obj unzip korle ekekta separate element tuple hisabe pawaya zay
+# ***zip obj unzip korle ekekta separate element tuple hisabe pawaya zay
 
 
